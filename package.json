@@ -1,0 +1,28 @@
+{
+  "name": "text-tools-cli",
+  "version": "1.0.0",
+  "description": "A fast, zero-dependency CLI for common text transformations (uppercase, lowercase, slugify, word/char count, unique lines, sort, etc.).",
+  "bin": {
+    "text-tools": "bin/text-tools.js",
+    "tt": "bin/text-tools.js"
+  },
+  "type": "commonjs",
+  "keywords": ["cli", "text", "tools", "string", "utilities"],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david8408/text-tools-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/david8408/text-tools-cli/issues"
+  },
+  "homepage": "https://github.com/david8408/text-tools-cli#readme",
+  "scripts": {
+    "test": "node tests/run.js",
+    "lint": "echo \"No linter configured\""
+  },
+  "engines": {
+    "node": ">=14"
+  }
+} 
