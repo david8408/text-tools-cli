@@ -55,6 +55,9 @@ Open-source, zero-dependency CLI for common text transformations (uppercase, low
 - Actions dashboard: https://github.com/david8408/text-tools-cli/actions
 - Workflow file: https://github.com/david8408/text-tools-cli/actions/workflows/ci.yml
 
+## Docs
+- Augment Code request (copy-ready): `docs/augment-code.md`
+
 ## Contributing
 See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md`.
 
