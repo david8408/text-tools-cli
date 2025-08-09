@@ -1,51 +1,50 @@
 # Text Tools CLI
 
 [![CI](https://github.com/david8408/text-tools-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/david8408/text-tools-cli/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-أداة CLI مفتوحة المصدر وسريعة بدون تبعيات لتنفيذ تحويلات نصية شائعة (uppercase، lowercase، Title Case، slug، عدّ الكلمات/الأحرف، إزالة التكرارات، الفرز، وغيرها).
+Open-source, zero-dependency CLI for common text transformations (uppercase, lowercase, title case, slugify, word/char count, unique lines, sorting, etc.).
 
-Open-source, zero-dependency CLI for common text transformations (uppercase, lowercase, title case, slugify, word/char count, unique lines, sort, etc.).
-
-## Features / المزايا
+## Features
 - Uppercase / Lowercase / Title Case
 - Slugify (kebab-case)
 - Word and character counts
 - Trim whitespace
-- Unique lines (إزالة التكرارات)
-- Sort lines (عادي، حساس/غير حساس لحالة الأحرف، رقمي، تنازلي)
+- Unique lines (deduplicate while preserving first occurrence)
+- Sort lines (lexicographic, case-insensitive, numeric, descending)
 - Reverse text
 
-## Install / التثبيت
-- محليًا للتطوير:
+## Install
+- Local for development:
   ```bash
   node bin/text-tools.js help
   ```
-- رابط عالمي بعد النشر على npm (اختياري لاحقًا):
+- Global after publishing to npm (optional, later):
   ```bash
   npm i -g text-tools-cli
   text-tools help
   ```
-- ربط محلي أثناء التطوير:
+- Link locally during development:
   ```bash
   npm link
   text-tools help
   ```
 
-## Usage / الاستخدام
-- تمرير النص كوسيطة:
+## Usage
+- Pass text as an argument:
   ```bash
   text-tools upper "hello world"    # => HELLO WORLD
   ```
-- أو عبر stdin:
+- Or via stdin:
   ```bash
   echo "b\na\na" | text-tools unique
   ```
-- أو تشغيل السكربت مباشرة:
+- Or run the script directly:
   ```bash
   node bin/text-tools.js slug "Hello, World!"
   ```
 
-أوامر متاحة:
+### Available commands
 - `upper`, `lower`, `title`, `slug`
 - `words`, `chars`, `trim`
 - `unique`
@@ -56,15 +55,14 @@ Open-source, zero-dependency CLI for common text transformations (uppercase, low
 - Actions dashboard: https://github.com/david8408/text-tools-cli/actions
 - Workflow file: https://github.com/david8408/text-tools-cli/actions/workflows/ci.yml
 
-## Development / التطوير
-- تشغيل الاختبارات:
+## Contributing
+See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md`.
+
+## Development
+- Run tests:
   ```bash
   npm test
   ```
 
-## Contributing / المساهمة
-- الانفتاح على القبول بالمساهمات: إصلاحات، تحسينات، وثائق.
-- افتح `issue` أو `pull request`.
-
-## License / الرخصة
-- MIT. انظر `LICENSE`. 
+## License
+MIT — see `LICENSE`. 
